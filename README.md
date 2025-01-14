@@ -8,11 +8,21 @@ Nikhil Kumar Bharti and Koustav Rudra
 We develop an LSTM-based approach to identify whether a tweet is written by a human or a bot. We consider two different setups
 <p>
 * Setup 1: In the first setup, we only consider tweets as a feature, and do not consider any metadata and try to identify whether it is written by a human or a bot. To check the role of paraphrasing, we paraphrase the test data using OpenAI's davinci model. Note that: We just paraphrase the test data, not the training data, to check the performance of the bot-detection algorithms under paraphrased version. In figure 1, the red bars indicate the performance on original test data, and the green bars indicate the performance on paraphrased data.
-* Setup 2: In the second setup, along with tweet we also consider two metadata: the location of the user and whether the user is verified. Similar to the first setup, we check the performance of original test data and the paraphrased test data.
-* Setup 3: Here, we have considered only tweet text as a feature. But, instead of paraphrasing the entire test set, we just paraphrase the tweets written by bots. Tweets written by humans remain unaltered.
-* Setup 4: This is similar to Setup 3, but we consider two metadata (location, verification status) along with the text, as the features.
-* Setup 5: Here, we have considered only tweet text as a feature. But, instead of paraphrasing the entire test set, we just paraphrase the tweets written by humans. Tweets written by bots remain unaltered.
-* Setup 6: This is similar to Setup 5, but we consider two metadata (location, verification status) along with the text, as the features.
+</p>
+<p>
+  Setup 2: In the second setup, along with tweet we also consider two metadata: the location of the user and whether the user is verified. Similar to the first setup, we check the performance of original test data and the paraphrased test data.
+</p>
+<p>
+  Setup 3: Here, we have considered only tweet text as a feature. But, instead of paraphrasing the entire test set, we just paraphrase the tweets written by bots. Tweets written by humans remain unaltered.
+</p>
+<p>
+  Setup 4: This is similar to Setup 3, but we consider two metadata (location, verification status) along with the text, as the features.
+</p>
+<p>
+  Setup 5: Here, we have considered only tweet text as a feature. But, instead of paraphrasing the entire test set, we just paraphrase the tweets written by humans. Tweets written by bots remain unaltered.
+</p>
+<p>
+  Setup 6: This is similar to Setup 5, but we consider two metadata (location, verification status) along with the text, as the features.
 </p>
 
 ![label0_1feat](https://github.com/NikhilKumarBharti/TwitterBotDetectionandEffectofParaphrasing/assets/88152449/83082700-60fb-426b-9f85-470ce81b5b72)
